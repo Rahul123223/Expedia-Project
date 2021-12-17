@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xpedia</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="left">
+        <div>
+          <img
+            src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
+            alt=""
+            id=""
+          />
+        </div>
+        <div>
+          <select name="" id="select">
+            <option value="Stays">More Travel</option>
+            <option value="Flight">Flight</option>
+            <option value="Cars">Cars</option>
+            <option value="Packages">Package</option>
+            <option value="Holiday Activities">Holiday Activities</option>
+            <option value="Deals">Deals</option>
+            <option value="Group Meetings">Group Meetings</option>
+            <option value="Mobile">Mobile</option>
+          </select>
+        </div>
+      </div>
+      <div id="right">
+        <div><button id="btn1">English</button></div>
+        <div><button id="btn2">Support</button></div>
+        <div><button id="btn3" onclick="tripS()">Trips</button></div>
+        <div><button id="btn4" onclick="signIn()">Sign In</button></div>
+        <div>
+          <button id="btn5" onclick="createAcc()">Create Account</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="trips">
+      <h1>Trips</h1>
+      <div id="trips_img_box">
+        <div id="trips_img">
+          <img
+            src="https://a.travel-assets.com/egds/illustrations/uds-default/unlock__large.svg"
+            alt=""
+            id="trips_img"
+          />
+        </div>
+        <div>
+          <button id="tripLog" onclick="tripsLogIn()">
+            Sign in or create free account
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function signIn() {
+    window.location.href = "signIn.html";
+  }
+  function createAcc() {
+    window.location.href = "createAcc.html";
+  }
+  function tripS() {
+    window.location.href = "trips.html";
+  }
+  function tripsLogIn() {
+    window.location.href = "signIn.html";
+  }
+</script>
