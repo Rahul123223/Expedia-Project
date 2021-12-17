@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script
+  src="https://kit.fontawesome.com/e424a3d0f0.js"
+  crossorigin="anonymous"
+></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Xpedia</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="left">
+        <div>
+          <img width="100%"
+            src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
+            alt=""
+            id="expedia_img1"
+          />
+        </div>
+        <div>
+       
+          <div class="">
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn btn-primary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                id="button_top"
+              >
+                More Travel
+              </button>
+              <ul class="dropdown-menu" id="size">
+                <li><a class="dropdown-item" href="#"><i class="fas fa-hotel"></i>  Stays</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-plane-departure"></i> Flights</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-car"></i> Cars</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-shipping-fast"></i> Package</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-gifts"></i> Holiday Activities</a></li>
+                <li><a class="dropdown-item" href="#">Deals</a></li>
+                <li><a class="dropdown-item" href="#">Groups & Meetings</a></li>
+                <li><a class="dropdown-item" href="#">Mobile</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div id="right">
+        <div><button id="btn1"><i class="fas fa-globe"></i>  English</button></div>
+        <div><button id="btn2">Support</button></div>
+        <div><button id="btn3" onclick="tripS()">Trips</button></div>
+        <div><button id="btn4" onclick="signIn()"><i class="far fa-user-circle"></i>  Sign In
+          </button></div>
+        <div>
+          <button id="btn5" onclick="createAcc()"><i class="fas fa-sign-in-alt">  Create Account</i></button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="second_container">
+      <div id="top_content">
+        <div id="inside_top_content">
+          <div id="inside_top_content_box">
+            <div><p class="hov">Stays </p></div>
+            <div><p class="hov"> Flights</p></div>
+            <div><p class="hov"> Cars</p></div>
+            <div><p class="hov"> Packages</p></div>
+            <div><p class="hov">Things to do</p></div>
+          </div>
+          <hr />
+        </div>
+        <div id="data">
+          <input type="search" placeholder="Going to" class="search" id="search"  >
+          <input type="date" placeholder="check in" class="date" id="date1">
+          <input type="date" placeholder="check out" class="date" id="date2">
+          <input type="number" placeholder="travellers" class="date" id="number">
+        </div>
+        <div id="check1">
+          <input type="checkbox" id="check">
+          <label for="check">Add a flight</label>
+          <input type="checkbox" id="check">
+          <label for="check">Add a car  </label>
+        </div>
+        <div id="btn">
+          <button id="btn" onclick="createBtn()" >Search</button>
+        </div>
+      </div>
+      <div id="textbar">
+        <h3>Changes are coming to Expedia Rewards</h3>
+        <p>We're introducing some changes to our programme from 2 February 2022.</p><a href="">Learn more</a>
+      </div>
+      <div id="inside_top_content2">
+        <img width="100%" height="100%" style="border-radius: 10px;" src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg" alt="">
+      </div>
+      <div id="inside_top_content3">
+        <div id="imgDiv2">
+          <img
+            id="imgDiv"
+            src="https://a.travel-assets.com/mad-service/header/takeover/expedia_marquee_refresh.jpg"
+            alt=""
+          />
+        </div>
+        <div id="side_content">
+          <h1>Plan your trip in a snap on the app</h1>
+          <p>
+            From home or hammock, organise your entire escape and explore app
+            offers
+          </p>
+          <p>Text Yourself a download link</p>
+          <div id="mobile">
+            <input type="search" placeholder="search here">
+            <input type="number" placeholder="Enter Mobile ">
+            <button id="mobbtn">Get the app</button>
+           
+          </div>
+          <div>
+            <p style="font-size: 12px; margin-top: 20px;">By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+          </div>
+        </div>
+        <div id="QR">
+          <img
+            id="qrimg"
+            src="https://a.travel-assets.com/mad-service/qr-code/footer_qr/27_QR_FOOTER.png"
+            alt=""
+          />
+          <h6 style="margin-left: 22px">Scan the QR Code</h6>
+        </div>
+      </div>
+      <div id="middle_text">
+        <p>Explore a world of travel with Expedia</p>
+        <a href="#" style="text-decoration: none"
+          >Discover new places and experiences</a
+        >
+      </div>
+      <div id="inside_top_content4">
+        <div class="box">
+          <br>
+          <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+        </div>
+        <div class="box">
+          <p>Company</p>
+          <p><a href="">About us</a></p>
+          <p><a href="">Jobs</a></p>
+          <p><a href="">List you property</a></p>
+          <p><a href="">Partnerships</a></p>
+        </div>
+        <div class="box">
+          <p>Explore</p>
+          <p><a href="#">India travel guide</a></p>
+          <p><a href="#">Hotels in india</a></p>
+          <p><a href="#">Holiday rentals in India</a></p>
+          <p><a href="#">Holiday Packages in India</a></p>
+          <p><a href="#">Domestics Flights</a></p>
+          <p><a href="#">Car hire in India</a></p>
+          <p><a href="#">All accomodation types</a></p>
+        </div>
+        <div class="box">
+          <p>Terms and Policies</p>
+          <p><a href="#">Privacy Statement</a></p>
+          <p><a href="#">Terms of use</a></p>
+        </div>
+        <div class="box">
+          <p>Help</p>
+          <p><a href="#">Support</a></p>
+          <p><a href="#">Change or cancel your bookings</a></p>
+          <p><a href="#">Refund process and timelines</p></a>
+          <p><a href="#">Book a flight using an airline credit</p></a>
+          <p><a href="#">International travel documents</p></a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <hr>
+      <div>
+        <img id="footerImg" src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" alt="" >
+      </div>
+      <p style="font-size: 12px;">© 2021 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
+    </div>
+  </body>
+</html>
+<script src="home.js">
+
+</script>
