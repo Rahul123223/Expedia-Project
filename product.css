@@ -1,0 +1,82 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 250px;
+  row-gap: 10px;
+  margin-top: 50px;
+  margin-left: 25%;
+  /* width: 50%;  */
+  column-gap: 10px;
+}
+
+#container2 {
+  display: flex;
+  width: 80%;
+  height: 800px;
+}
+#leftContainer {
+  width: 52%;
+  height: 100%;
+}
+.mybtn {
+  border: none;
+  background-color: royalblue;
+  color: white;
+  border: 10px;
+  border-radius: 10px;
+}
+#rightContainer {
+  width: 48%;
+  height: 100%;
+  border-radius: 10px;
+}
+#container4 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  display: flex;
+  height: 30%;
+  margin-top: 20px;
+  width: 100%;
+}
+#filterBox {
+  border-radius: 10px;
+
+  width: 26%;
+  height: 50%;
+}
+#container3 {
+  width: 63%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+img {
+  border-radius: 10px;
+  height: 210px;
+  width: 100%;
+}
+#container > div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#expedia_img2 {
+  height: 50px;
+  width: 150px;
+}
+#left_bar {
+  width: 30%;
+}
+#filter {
+  width: 20%;
+  margin-left: 730px;
+}
+#footerImg {
+  height: 100px;
+  width: 200px;
+}
+#ex {
+  width: 200px;
+  height: 50px;
+}
+#sel {
+  border: none;
+}
