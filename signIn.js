@@ -8,7 +8,7 @@ function signIn() {
 
   for (var i = 0; i < regUsers.length; i++) {
     if (regUsers[i].emailAddress == email && regUsers[i].passWord == password) {
-      window.location.href = "Home.html";
+      window.location.href = "index.html";
       
     } else {
       alert("Wrong Email ID & Password");

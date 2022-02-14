@@ -46,7 +46,7 @@ function otpFunction(e) {
     alert("Payment Successful");
     alert("Thank You For Purchasing");
 
-    window.location.href = "home.html";
+    window.location.href = "index.html";
   } else {
     alert("Invalid Otp");
   }
